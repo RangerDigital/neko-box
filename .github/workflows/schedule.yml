@@ -1,0 +1,19 @@
+name: Update GitHub Gist with Neko-box!
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@master
+
+      - name: Update activity from AniList
+        uses: rangerdigital/neko-box@master
+        with:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GIST_ID: ${{ secrets.GIST_ID }}
+          ANILIST_USERNAME: ${{ secrets.ANILIST_USERNAME }}
