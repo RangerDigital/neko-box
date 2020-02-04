@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="400" src="example.png" alt="Example Gist">
+  <img width="500" src="example.png" alt="Example Gist">
   <h3 align="center">Neko-Box</h3>
   <p align="center">Pinnable dynamic Gist with your latest AniList activity!</p>
 </p>
@@ -8,6 +8,10 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 **Neko-Box** is a simple **GitHub Action** built to make dynamic Gist displaying your latest activity from AniList.
+
+<p align="center">
+	<img src="showcase.gif" alt="A showcase of some of the statuses" width=500/>
+</p>
 
 <br>
 
@@ -26,8 +30,9 @@ You can do that at https://github.com/settings/tokens/new
 - Go to your fork's **Settings > Secrets** page add the following secrets:
 	- **`ANILIST_USERNAME`** - Your username from AniList.
 	- **`GH_TOKEN`** - The access token you saved earlier.
-	- **`GIST_ID`** - The ID of your newly created public Gist.  
-	 You can find it in the URL and It will look like this:
+	- **`GIST_ID`** - The ID of your newly created public Gist.
+
+   You can find it in the URL and It will look like this:
 	 `https://gist.github.com/RangerDigital/`**`d1b79f73d3e5a2420ed370b0059dba42`**.
 
 <br>
