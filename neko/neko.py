@@ -19,7 +19,7 @@ ANILIST_USERNAME = os.environ["INPUT_ANILIST_USERNAME"]
 def update_gist(description, content):
     params = {"scope": "gist"}
     headers = {"Authorization": "token {}".format(GH_TOKEN)}
-    payload = {"description": description, "public": True, "files": {"Powered by Neko-Box!": {"content": payload}}}
+    payload = {"description": description, "public": True, "files": {"Powered by Neko-Box!": {"content": content}}}
 
     response = requests.post(GH_API + "/gists/" + GIST_ID, headers=headers, params=params, json=content)
 
