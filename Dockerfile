@@ -4,4 +4,4 @@ FROM python:latest
 ADD requirements.txt /requirements.txt
 RUN pip install -r requirements.txt
 
-CMD python ./neko.py
+CMD python ./neko/neko.py
