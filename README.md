@@ -28,7 +28,7 @@ You can do that at https://github.com/settings/tokens/new
 	- **`GH_TOKEN`** - The access token you saved earlier.
 	- **`GIST_ID`** - The ID of your newly created public Gist.
 
-   It will look like this:
+   It will look like this:  
 	 `https://gist.github.com/RangerDigital/`**`d1b79f73d3e5a2420ed370b0059dba42`**.
 
 <br>
