@@ -9,10 +9,6 @@
 
 **Neko-Box** is a simple **GitHub Action** built to make dynamic Gist displaying your latest activity from AniList.
 
-<p align="center">
-	<img src="showcase.gif" alt="A showcase of some of the statuses" width=500/>
-</p>
-
 <br>
 
 ## 🎉 Usage
@@ -32,7 +28,7 @@ You can do that at https://github.com/settings/tokens/new
 	- **`GH_TOKEN`** - The access token you saved earlier.
 	- **`GIST_ID`** - The ID of your newly created public Gist.
 
-   You can find it in the URL and It will look like this:
+   It will look like this:
 	 `https://gist.github.com/RangerDigital/`**`d1b79f73d3e5a2420ed370b0059dba42`**.
 
 <br>
@@ -40,6 +36,10 @@ You can do that at https://github.com/settings/tokens/new
 **That's It!**  
 Now every 10 minutes `schedule.yml` workflow will update your Gist,  
 It's now a good idea to pin it in your profile to show off your weeb power level!
+
+<p align="center">
+	<img src="showcase.gif" alt="A showcase of some of the statuses" width=500/>
+</p>
 
 <br>
 
