@@ -21,7 +21,7 @@ def update_gist(description, content):
     headers = {"Authorization": "token {}".format(GH_TOKEN)}
     payload = {"description": description, "public": True, "files": {"Powered by Neko-Box!": {"content": content}}}
 
-    response = requests.post(GH_API + "/gists/" + GIST_ID, headers=headers, params=params, json=content)
+    response = requests.post(GH_API + "/gists/" + GIST_ID, headers=headers, params=params, json=payload)
 
     if response.status_code == 200 or response.status_code == 201:
         print("Done! The gist was successfully updated!")
