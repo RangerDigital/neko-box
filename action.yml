@@ -1,0 +1,21 @@
+name: 'Neko-box'
+author: Jakub Bednarski
+description: 'Pinnable dynamic Gist with your latest AniList activity.'
+
+inputs:
+  GH_TOKEN:
+    description: 'GitHub access token with Gist scope'
+    required: true
+
+  GIST_ID:
+    description: 'The ID of Gist to update'
+    required: true
+
+  ANILIST_USERNAME:
+    description: 'Your AniList username'
+    required: true
+
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
