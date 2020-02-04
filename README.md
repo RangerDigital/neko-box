@@ -12,7 +12,7 @@
 <br>
 
 ## 🎉 Usage
-To start, you need to prepare some things:
+**To start, you need to prepare some things:**
 - Create a new public GitHub Gist at https://gist.github.com/
 
 - Create an Access Token with the `gist` scope and save it.
@@ -20,7 +20,7 @@ You can do that at https://github.com/settings/tokens/new
 
 <br>
 
-After getting this done:
+**After getting this done:**
 - Fork this repository.
 
 - Go to your fork's **Settings > Secrets** page add the following secrets:
@@ -29,6 +29,8 @@ After getting this done:
 	- **`GIST_ID`** - The ID of your newly created public Gist.  
 	 You can find it in the URL and It will look like this:
 	 `https://gist.github.com/RangerDigital/`**`d1b79f73d3e5a2420ed370b0059dba42`**.
+
+<br>
 
 **That's It!**  
 Now every 10 minutes `schedule.yml` workflow will update your Gist,  
