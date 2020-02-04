@@ -20,16 +20,18 @@ You can do that at https://github.com/settings/tokens/new
 
 <br>
 
-After getting that done:
+After getting this done:
 - Fork this repository.
+
 - Go to your fork's **Settings > Secrets** page add the following secrets:
-	- **ANILIST_USERNAME** - Your username from AniList.
-	- **GH_TOKEN** - The access token you saved earlier.
-	- **GIST_ID** - The ID of your newly created public Gist.
+	- **`ANILIST_USERNAME`** - Your username from AniList.
+	- **`GH_TOKEN`** - The access token you saved earlier.
+	- **`GIST_ID`** - The ID of your newly created public Gist.  
 	 You can find it in the URL and It will look like this:
 	 `https://gist.github.com/RangerDigital/`**`d1b79f73d3e5a2420ed370b0059dba42`**.
 
-**That's It!** Now every 10 minutes schedule.yml workflow will update your Gist,  
+**That's It!**  
+Now every 10 minutes `schedule.yml` workflow will update your Gist,  
 It's now a good idea to pin it in your profile to show off your weeb power level!
 
 <br>
