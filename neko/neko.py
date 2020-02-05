@@ -100,7 +100,6 @@ def main():
     # Create a media activity message.
     elif activity["type"] == "ANIME_LIST" or activity["type"] == "MANGA_LIST":
         line_break = "▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔".center(42)
-        line_break = "-------------------------".center(58)
         progress = activity["progress"] if activity["progress"] else "all"
         status = "{} {} {} of...".format(ANILIST_USERNAME, activity["status"], progress)
         content = "{}\n{}\n{}".format(status, activity["media"]["title"]["romaji"].center(58), line_break)
