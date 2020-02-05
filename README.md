@@ -31,6 +31,8 @@ You can do that at https://github.com/settings/tokens/new
    *It will look like this:*  
 	 `https://gist.github.com/RangerDigital/`**`d1b79f73d3e5a2420ed370b0059dba42`**.
 
+ - Delete a `.github/workflows/schedule.yml` file.
+
  - Create a `.github/workflows/neko-box.yml` file like this:
 
  ```yml
