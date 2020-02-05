@@ -31,10 +31,34 @@ You can do that at https://github.com/settings/tokens/new
    *It will look like this:*  
 	 `https://gist.github.com/RangerDigital/`**`d1b79f73d3e5a2420ed370b0059dba42`**.
 
+ - Create a `.github/workflows/neko-box.yml` file like this:
+
+ ```yml
+ name: Update GitHub Gist with Neko-box!
+
+ on:
+   schedule:
+     - cron: '*/10 * * * *'
+
+ jobs:
+   build:
+     runs-on: ubuntu-latest
+
+     steps:
+       - uses: actions/checkout@master
+
+       - name: Update activity from AniList
+         uses: rangerdigital/neko-box@master
+         with:
+           GH_TOKEN: ${{ secrets.GH_TOKEN }}
+           GIST_ID: ${{ secrets.GIST_ID }}
+           ANILIST_USERNAME: ${{ secrets.ANILIST_USERNAME }}
+ ```
+
 <br>
 
 **That's It!**  
-Now every 10 minutes `schedule.yml` workflow will update your Gist,  
+Now every 10 minutes `neko-box.yml` workflow will update your Gist,  
 It's now a good idea to pin it in your profile to show off your weeb power level!
 
 <br>
