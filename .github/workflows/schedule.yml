@@ -1,6 +1,9 @@
 name: Update GitHub Gist with Neko-box!
 
 on:
+  push:
+    branches:
+      - master
   schedule:
     - cron: '*/10 * * * *'
 
